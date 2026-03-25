@@ -134,6 +134,8 @@ All three subjects show identical training curves (the PC network trains on ResN
 | CLIP | 0.160 | 0.131 | 0.109 | 0.124 | 0.083 | 0.121 |
 | Noise Ceiling | 0.519 | 0.447 | 0.379 | 0.231 | 0.400 | 0.404 |
 
+<img width="1785" height="890" alt="pc_hierarchy_sub-01" src="https://github.com/user-attachments/assets/9776cf12-a27a-4f98-9886-a976f99a8189" />
+
 The crossing pattern is visible: r0 peaks at V1 (ρ=0.308), r3 peaks at LOC/IT (ρ=0.142/0.154). Crucially, **PC r0 outperforms ViT-B/16 at V1** (0.308 vs. 0.201) despite ViT being trained on orders of magnitude more data.
 
 ### Replication Across Subjects
@@ -145,6 +147,8 @@ The crossing pattern replicates in all 3 subjects:
 | Sub-01 | 0.308 | 0.052 | 0.103 | 0.148 |
 | Sub-02 | 0.355 | 0.048 | 0.102 | 0.171 |
 | Sub-03 | 0.252 | 0.050 | 0.092 | 0.137 |
+
+<img width="1635" height="729" alt="pc_hierarchy_group" src="https://github.com/user-attachments/assets/deb33cf4-fea3-43d9-aa20-728b2857875e" />
 
 Sub-03 has lower absolute values throughout, consistent with its lower noise ceilings (NC~0.17 vs ~0.50 for sub-01/02), suggesting less reliable fMRI data rather than a model failure.
 
@@ -171,6 +175,12 @@ The interaction effect of **+0.266** quantifies the crossing pattern: r0 has a s
 | ViT-B/16 block3 | 0.189 |
 | CLIP block3 | 0.159 |
 | ResNet-50 layer2 | 0.079 |
+
+<img width="2085" height="890" alt="pc_rsa_comparison_sub-01" src="https://github.com/user-attachments/assets/b84b0190-d396-4e30-993e-f0a08e9db969" />
+
+<img width="2085" height="890" alt="pc_rsa_comparison_sub-02" src="https://github.com/user-attachments/assets/38530ebe-3c7e-4d90-ab68-2701ca1972ff" />
+
+<img width="2086" height="890" alt="pc_rsa_comparison_sub-03" src="https://github.com/user-attachments/assets/b5da3b93-492a-4bf2-aadf-fd9020a9263c" />
 
 PC r0 consistently outperforms all baselines at V1 across all 3 subjects. This is the project's strongest finding — a brain-inspired model beats state-of-the-art vision models at the earliest visual area.
 
