@@ -15,6 +15,10 @@ The central question: *does a model built according to the brain's own logic mod
 
 ---
 
+For the theoretical background — why the PC objective produces V1-like representations, derived from the energy function and equilibrium conditions — see [**Why Does Predictive Coding Learn V1-like Representations?**](./THEORY.md)
+
+---
+
 ## Motivation
 
 Most computational neuroscience work uses CNNs as brain models. ResNet, ViT, and CLIP achieve impressive performance, but they are feedforward models trained on classification — not models of how the brain actually computes. Predictive Coding, originally proposed by Rao & Ballard (1999) and later formalized by Karl Friston, offers a fundamentally different account: the brain is a prediction machine, constantly generating top-down predictions and computing bottom-up prediction errors.
